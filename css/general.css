@@ -1,0 +1,25 @@
+body{
+    font-family: Arial;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    padding: 10px;
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > div{    
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+header > div > p{
+    text-align: center;
+    font-size: 30px;
+}

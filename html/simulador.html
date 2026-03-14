@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simulador</title>
+        <link rel="stylesheet" href="./../css/general.css">
+        <link rel="stylesheet" href="./../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <p>Simulador Experimento de Monthy</p>
+            </div>
+        </header>
+        <div class="contenedor">
+            <div class="contenedor-botones">
+                <a href="./../index.html">
+                    <button class="btn-action">
+                        <- Regresar                    
+                    </button>
+                </a>
+                <button id="btnStart" class="btn-action">
+                    Iniciar Simulación
+                </button>
+            </div>
+            <div class="contenedor">
+                <!-- Configuración -->
+                <label for="intentos">Cantidad de Intentos: </label>
+                <div class="input-container">
+                    <input type="number" id="intentos" class="input-ingreso" min="1" max="10000" value="1" />
+                </div>
+                <hr>
+
+                <!-- Marcador y Conteo -->
+                <h3>Marcador</h3>
+                <div class="marcador">
+                    <p id="textoGanados">Casos Ganados: 0</p>
+                    <p id="textoTotales">Casos Totales: 0</p>
+                    <p id="textoProbabilidad">Probabilidad: 0%</p>
+                </div>
+                <hr>
+
+                <!-- Aqui representamos los casos -->
+                <h3>Casos:</h3>
+                <div class="contenedor-leyendas">
+                    <div class="leyenda">
+                        <div class="color" style="background-color: #DBCA00;"></div>
+                        <p>Abierta por el Presentador</p>
+                    </div>
+                    <div class="leyenda">
+                        <div class="color" style="background-color: #088C3F;"></div>
+                        <p>Primer Selección</p>
+                    </div>
+                    <div class="leyenda">
+                        <div class="color" style="background-color: #067ED1;"></div>
+                        <p>Selección Final</p>
+                    </div>
+                </div>
+                <div class="contenedor" id="contenedorSimulaciones">                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="./../js//simulacion.js"></script>
+    </body>
+</html>
